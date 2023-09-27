@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url(./assets//fonts//Inter/Inter-VariableFont.ttf)format(ttf);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+body.dark {
+  --color-background: #fafafa;
+  --color-foreground: #1f2023;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-background: #1f2023;
+    --color-foreground: #efefef;
+  }
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.dark{
+  background-color: black;
+}
+
+header{
+ max-width: 1300px;
+}

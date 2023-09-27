@@ -1,0 +1,42 @@
+.button1 {
+  display: flex;
+  padding: 6px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  background: var(--gray-900, #111827);
+}
+
+.nav1 {
+  justify-content: space-between;
+  align-self: stretch;
+  height: 80px;
+}
+
+.nav_list_item:hover {
+  border-bottom: 2px solid grey;
+}
+
+@media only screen and (max-width: 769px) {
+  body {
+    .list {
+      display: none;
+    }
+    .text101{
+      font-size: 30px;
+    }
+    }
+    
+  }
+
+
+@media only screen and (max-width: 769px){
+  body{
+    .burger{
+      display: block !important;
+      margin-right: 20px;
+    }
+  }
+}
+
